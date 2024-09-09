@@ -1,7 +1,87 @@
-:root {}
+:root {
+  /* Colors */
+  /* Card box bolors */
 
+  --violet-card: hsl(263, 55%, 52%);
+  --grayish-card: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --background-color: hsl(0, 0%, 81%);
+
+
+  /* Font size */
+
+  --fnt-s-base: 1rem;
+
+  /* Font weight */
+  --fnt-weight-normal: 400;
+  --fnt-weight-bold: 600;
+}
+
+
+/* GLobal reset */
 * {
-
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+
+.cards {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cards.violet {
+  background-color: var(--violet-card);
+}
+
+.cards.grayish-blue {
+  background-color: var(--grayish-card);
+}
+
+.cards.blackish-blue {
+  background-color: var(--blackish-blue);
+}
+
+.cards.white {
+  color: var(--grayish-card);
+}
+
+.cards .quotes {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 90px;
+}
+
+.cards .image {
+  display: flex;
+  align-items: center;
+}
+
+.cards .image img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cards h4 {
+  margin: 10px 0 20px;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.cards p {
+  font-size: 17px;
 }
